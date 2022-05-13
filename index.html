@@ -1,1 +1,74 @@
 
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@devpriyam 
+devpriyam
+/
+html
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+html/gauriform.html
+@devpriyam
+devpriyam Add files via upload
+Latest commit b57f07f 13 seconds ago
+ History
+ 1 contributor
+31 lines (29 sloc)  769 Bytes
+   
+<!doctype html>
+<html>
+<head>
+<title>Form</title>
+</head>
+<body>
+<script>
+const validation=()=>{
+var name =  document.myform.name.value;
+var Mobilenum = document.myform.mobilenum.value;
+var email = document.myform.email.value;
+
+if(name==null||name==""){alert("name can't be blank");
+return false;
+}
+else if(Mobilenum.length==10){alert("Mobile number can't be more than 10 no.");
+return false;
+}
+else if(!email.include("@gmail.com")){alert("Email must contain @gmail.com");
+}
+}
+</script>
+
+<form name ="myform" onsubmit="validateform()">
+Name:<input type="text" name="name"><br/>
+Mobilenum:<input type="tel" name="mobile number"><br/>
+Email:<input type="email" name="email"><br/>
+<input type="submit"value="submit">
+</form>
+</body>
+</html>
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
